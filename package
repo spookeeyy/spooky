@@ -1,0 +1,15 @@
+korgus = int(input("Paki kõrgus (cm): "))
+kaal = float(input("Paki kaal (kg): "))
+
+# Paki suuruse ja saatmisviisi kontrollimine
+if korgus <= 9:
+    print("Pakk on S-suurusega ja saab saata pakiautomaadist.")
+elif korgus <= 19:
+    print("Pakk on M-suurusega ja saab saata pakiautomaadist.")
+elif korgus <= 39:
+    print("Pakk on L-suurusega ja saab saata pakiautomaadist.")
+else:
+    if kaal <= 30:
+        print("Pakki saab saata postkontorist või kulleriga.")
+    else:
+        print("Pakki saab saata ainult postkontorist.")
