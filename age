@@ -1,0 +1,10 @@
+vanus = int(input("Sisestage oma vanus: "))
+
+if vanus < 0 or vanus > 110:
+    print("Vigane vanus")
+elif vanus < 16:
+    print("Ei ole veel lubatud hääletada")
+elif vanus < 18:
+    print("On lubatud hääletada kohalikel valimistel")
+else:
+    print("On lubatud hääletada nii kohalikel kui ka riigikogu valimistel")
