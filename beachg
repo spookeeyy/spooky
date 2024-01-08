@@ -1,0 +1,11 @@
+temperatuur = int(input("Mis temperatuur väljas on? "))
+paistab_paike = input("Kas päike paistab? (jah või ei) ")
+roheline_lipp = input("Kas rannas on roheline lipp? (jah või ei) ")
+
+# Võrdleme tingimustega ja väljastame vastava sõnumi
+if roheline_lipp == "jah":
+    print("Võid minna randa!")
+elif temperatuur >= 20 and paistab_paike == "jah":
+    print("Võid minna randa!")
+else:
+    print("Täna ei tasu randa minna.")
