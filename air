@@ -1,0 +1,6 @@
+tuule_kiirus = float(input("Sisestage tuule kiirus (m/s): "))
+
+if tuule_kiirus < 8.0:
+    print("Kehalise kasvatuse tund võib toimuda õues")
+else:
+    print("Kehalise kasvatuse tund peaks toimuma siseruumis")
