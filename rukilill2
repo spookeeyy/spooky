@@ -1,0 +1,15 @@
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Lill")
+
+canvas = tk.Canvas(root, width=400, height=400, bg="white")
+canvas.pack()
+
+for i in range(80, 400, 160):
+    canvas.create_oval(i, 100, i+40, 140, fill="orange")
+    canvas.create_line(i+20, 100, i+20, 50, fill="green", width=5)
+    canvas.create_line(i+20, 100, i+30, 70, fill="green", width=5)
+    canvas.create_line(i+20, 100, i+10, 70, fill="green", width=5)
+
+root.mainloop()
