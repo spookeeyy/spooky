@@ -1,0 +1,16 @@
+
+
+nimefail = open("nimed.txt", "r")
+
+nimed = []
+
+for rida in nimefail:
+    nimed.append(rida.strip())
+
+nimefail.close()
+
+küsimus = int(input("Sisesta mitmendat kohal olevat nime soovid näha: "))
+
+valitud_nimi = nimed[küsimus - 1]
+
+print(f"Nime järjekorranumber {küsimus} on {valitud_nimi}.")
