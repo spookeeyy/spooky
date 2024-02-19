@@ -1,0 +1,12 @@
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Rukilill")
+
+canvas = tk.Canvas(root, width=400, height=400, bg="white")
+canvas.pack()
+
+points = [200, 100, 220, 160, 260, 160, 230, 180, 240, 220, 200, 200, 160, 220, 170, 180, 140, 160, 200, 100]
+canvas.create_polygon(points, fill="blue")
+
+root.mainloop()
