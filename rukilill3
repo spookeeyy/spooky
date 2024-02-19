@@ -1,0 +1,15 @@
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Rukkilill")
+
+canvas = tk.Canvas(root, width=400, height=400, bg="white")
+canvas.pack()
+
+canvas.create_oval(180, 150, 220, 190, fill="blue")
+
+canvas.create_line(190, 150, 190, 100, fill="green", width=5)
+canvas.create_line(190, 150, 200, 120, fill="green", width=5)
+canvas.create_line(190, 150, 180, 120, fill="green", width=5)
+
+root.mainloop()
