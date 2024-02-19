@@ -1,0 +1,17 @@
+from tkinter import *
+
+#Create the main window
+root = Tk()
+root.title("Emotikon")
+
+#Create a canvas with white background
+canvas = Canvas(root, width=200, height=200, bg='white')
+canvas.pack()
+
+#Draw a smiley face
+canvas.create_oval(50, 50, 150, 150, fill='yellow', outline='black') #head
+canvas.create_oval(70, 80, 90, 100, fill='black') #left eye
+canvas.create_oval(110, 80, 130, 100, fill='black') #right eye
+canvas.create_arc(70, 100, 130, 150, start=0, extent=180, style='arc', outline='black', width=2) #smile
+
+root.mainloop()
