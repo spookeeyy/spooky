@@ -1,0 +1,17 @@
+import tkinter as tk
+
+# Loome graafikaakna
+root = tk.Tk()
+root.title("Kuusk")
+
+# Loome joonistamiseks lõuendi
+canvas = tk.Canvas(root, width=400, height=400, bg='white')
+canvas.pack()
+
+# Joonistame kuuse
+canvas.create_polygon(200, 50, 150, 150, 250, 150, fill='green') # Okstega kuuse alumine osa
+canvas.create_polygon(200, 100, 175, 200, 225, 200, fill='green') # Okstega kuuse keskmine osa
+canvas.create_polygon(200, 150, 190, 250, 210, 250, fill='green') # Oksteta kuuse ülemine osa
+canvas.create_rectangle(190, 250, 210, 280, fill='brown') # Kuuse tüvi
+
+root.mainloop()
