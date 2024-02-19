@@ -1,0 +1,17 @@
+Vabandust, siin on kood, et joonistada rukilille kujuline element ümmarguse asemel:
+
+```python
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Rukilill")
+
+canvas = tk.Canvas(root, width=400, height=400, bg="white")
+canvas.pack()
+
+canvas.create_polygon(200, 100, 220, 160, 260, 160, 230, 180, 240, 220, 200, 200, 160, 220, 170, 180, 140, 160, fill="blue")
+
+root.mainloop()
+```
+
+Antud koodi abil luuakse graafiline element, mis on rukilille kujuline.
