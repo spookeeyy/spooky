@@ -1,0 +1,9 @@
+nimi = input("Palun sisestage oma nimi: ")
+vanus = int(input("Palun sisestage oma vanus: "))
+aasta = int(input("Palun sisestage aastaarv: "))
+
+praegune_aasta = 2024
+vanus_antud_aastal = vanus + (aasta - praegune_aasta)
+
+print("Tere, " + nimi + "!")
+print("Aastal " + str(aasta) + " olid te " + str(vanus_antud_aastal) + " aastat vana.")
